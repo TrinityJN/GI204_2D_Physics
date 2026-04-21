@@ -4909,6 +4909,7 @@ GameObject:
   - component: {fileID: 1829505424}
   - component: {fileID: 1829505423}
   - component: {fileID: 1829505427}
+  - component: {fileID: 1829505428}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -5085,6 +5086,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!247 &1829505428
+ConstantForce2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829505422}
+  m_Enabled: 1
+  m_Force: {x: 1, y: 0}
+  m_RelativeForce: {x: 0, y: 0}
+  m_Torque: 1.5
 --- !u!1 &1888814537
 GameObject:
   m_ObjectHideFlags: 0
