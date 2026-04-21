@@ -25,7 +25,7 @@ public class Player2DController : MonoBehaviour
 
         _rb.linearVelocity = new Vector2(moveValue * speed, _rb.linearVelocity.y); // ขยับโดยการเพิ่มความเร็วตามทิศทาง Input * Speed
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame) // ปุ่มกด spacebar
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded) // ปุ่มกด spacebar
         {
             _rb.AddForce(new Vector2(_rb.linearVelocity.x, jumpForce)); // เพิ่มแรงเมื่อกด spacebar กระโดด
             Debug.Log("Jump!");
